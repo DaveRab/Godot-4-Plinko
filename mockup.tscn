@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cb3bwjlcsnwn0"]
+
+[ext_resource type="Texture2D" uid="uid://csnbdw3sww8eq" path="res://resources/gameboardMockUp.png" id="1_7a47y"]
+
+[node name="GameboardMockUp" type="Sprite2D"]
+position = Vector2(360, 641)
+texture = ExtResource("1_7a47y")
