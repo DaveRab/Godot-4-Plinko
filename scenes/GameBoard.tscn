@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4gbnmgcicr7y"]
+
+[ext_resource type="Texture2D" uid="uid://djcjs32wvx3jp" path="res://resources/stellarPlinkGameBoard.png" id="1_7tffs"]
+
+[node name="GameBoard" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(360, 640)
+texture = ExtResource("1_7tffs")
+
+[node name="Area2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(-1, 195, 3, 195, 5, 198, 5, 1279, 98, 1279, 98, 1147, 101, 1144, 105, 1144, 108, 1147, 108, 1279, 201, 1279, 201, 1148, 204, 1145, 208, 1145, 211, 1148, 211, 1279, 304, 1279, 304, 1148, 307, 1145, 311, 1145, 314, 1148, 314, 1279, 407, 1279, 407, 1148, 410, 1145, 414, 1145, 417, 1148, 417, 1279, 509, 1279, 509, 1148, 512, 1145, 516, 1145, 519, 1148, 519, 1279, 612, 1279, 612, 1148, 615, 1145, 619, 1145, 622, 1148, 622, 1279, 715, 1279, 715, 198, 718, 195, 721, 195, 747, 230, 747, 1304, -33, 1304, -32, 230)

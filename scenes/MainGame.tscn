@@ -1,0 +1,252 @@
+[gd_scene load_steps=5 format=3 uid="uid://e3dwhomag3x6"]
+
+[ext_resource type="PackedScene" uid="uid://b4gbnmgcicr7y" path="res://scenes/GameBoard.tscn" id="1_j8sv8"]
+[ext_resource type="Script" path="res://scripts/viewport.gd" id="1_jcep1"]
+[ext_resource type="PackedScene" uid="uid://dmjq4a28fq3vi" path="res://scenes/Puck.tscn" id="2_12alm"]
+[ext_resource type="PackedScene" uid="uid://e5vgildaa6br" path="res://scenes/Peg.tscn" id="4_tvub4"]
+
+[node name="MainGame" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_jcep1")
+
+[node name="GameBoard" parent="CanvasLayer" instance=ExtResource("1_j8sv8")]
+
+[node name="Puck" parent="CanvasLayer" instance=ExtResource("2_12alm")]
+position = Vector2(514, 111)
+
+[node name="PegGroup" type="CanvasLayer" parent="CanvasLayer"]
+
+[node name="Peg" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(30, 330)
+
+[node name="Peg2" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(140, 330)
+
+[node name="Peg3" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(250, 330)
+
+[node name="Peg4" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(360, 330)
+
+[node name="Peg5" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(470, 330)
+
+[node name="Peg6" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(580, 330)
+
+[node name="Peg7" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(690, 330)
+
+[node name="Peg8" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(85, 400)
+
+[node name="Peg9" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(196, 400)
+
+[node name="Peg10" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(306, 400)
+
+[node name="Peg11" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(415, 400)
+
+[node name="Peg12" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(525, 400)
+
+[node name="Peg13" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(635, 400)
+
+[node name="Peg14" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(30, 470)
+
+[node name="Peg15" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(140, 470)
+
+[node name="Peg16" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(251, 470)
+
+[node name="Peg17" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(360, 470)
+
+[node name="Peg18" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(470, 470)
+
+[node name="Peg19" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(579, 470)
+
+[node name="Peg20" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(689, 470)
+
+[node name="Peg21" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(85, 540)
+
+[node name="Peg22" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(195, 540)
+
+[node name="Peg23" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(305, 540)
+
+[node name="Peg24" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(415, 540)
+
+[node name="Peg25" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(525, 540)
+
+[node name="Peg26" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(635, 540)
+
+[node name="Peg27" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(30, 610)
+
+[node name="Peg28" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(140, 610)
+
+[node name="Peg29" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(250, 610)
+
+[node name="Peg30" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(361, 610)
+
+[node name="Peg31" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(470, 610)
+
+[node name="Peg32" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(579, 610)
+
+[node name="Peg33" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(690, 610)
+
+[node name="Peg34" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(85, 680)
+
+[node name="Peg35" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(195, 680)
+
+[node name="Peg36" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(305, 680)
+
+[node name="Peg37" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(416, 680)
+
+[node name="Peg38" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(525, 680)
+
+[node name="Peg39" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(635, 680)
+
+[node name="Peg40" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(30, 750)
+
+[node name="Peg41" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(140, 750)
+
+[node name="Peg42" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(250, 750)
+
+[node name="Peg43" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(360, 750)
+
+[node name="Peg44" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(470, 750)
+
+[node name="Peg45" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(580, 750)
+
+[node name="Peg46" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(690, 750)
+
+[node name="Peg47" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(85, 820)
+
+[node name="Peg48" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(195, 820)
+
+[node name="Peg49" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(305, 820)
+
+[node name="Peg50" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(415, 820)
+
+[node name="Peg51" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(525, 820)
+
+[node name="Peg52" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(635, 820)
+
+[node name="Peg53" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(30, 890)
+
+[node name="Peg54" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(140, 890)
+
+[node name="Peg55" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(251, 890)
+
+[node name="Peg56" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(360, 890)
+
+[node name="Peg57" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(470, 890)
+
+[node name="Peg58" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(580, 890)
+
+[node name="Peg59" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(690, 890)
+
+[node name="Peg60" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(85, 960)
+
+[node name="Peg61" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(195, 960)
+
+[node name="Peg62" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(305, 960)
+
+[node name="Peg63" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(415, 960)
+
+[node name="Peg64" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(525, 960)
+
+[node name="Peg65" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(635, 960)
+
+[node name="Peg66" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(30, 1030)
+
+[node name="Peg67" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(140, 1030)
+
+[node name="Peg68" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(250, 1030)
+
+[node name="Peg69" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(360, 1030)
+
+[node name="Peg70" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(470, 1030)
+
+[node name="Peg71" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(580, 1030)
+
+[node name="Peg72" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(691, 1030)
+
+[node name="Peg73" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(85, 1100)
+
+[node name="Peg74" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(195, 1100)
+
+[node name="Peg75" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(305, 1100)
+
+[node name="Peg76" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(415, 1100)
+
+[node name="Peg77" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(525, 1100)
+
+[node name="Peg78" parent="CanvasLayer/PegGroup" instance=ExtResource("4_tvub4")]
+position = Vector2(636, 1100)
