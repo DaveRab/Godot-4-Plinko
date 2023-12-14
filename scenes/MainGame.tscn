@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://e3dwhomag3x6"]
+[gd_scene load_steps=6 format=3 uid="uid://e3dwhomag3x6"]
 
 [ext_resource type="PackedScene" uid="uid://b4gbnmgcicr7y" path="res://scenes/GameBoard.tscn" id="1_j8sv8"]
 [ext_resource type="Script" path="res://scripts/viewport.gd" id="1_jcep1"]
 [ext_resource type="PackedScene" uid="uid://dmjq4a28fq3vi" path="res://scenes/Puck.tscn" id="2_12alm"]
+[ext_resource type="Script" path="res://scripts/puck_control.gd" id="3_vmd87"]
 [ext_resource type="PackedScene" uid="uid://e5vgildaa6br" path="res://scenes/Peg.tscn" id="4_tvub4"]
 
 [node name="MainGame" type="Node2D"]
@@ -12,7 +13,14 @@ script = ExtResource("1_jcep1")
 
 [node name="GameBoard" parent="CanvasLayer" instance=ExtResource("1_j8sv8")]
 
-[node name="Puck" parent="CanvasLayer" instance=ExtResource("2_12alm")]
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_vmd87")
+
+[node name="Puck" parent="CanvasLayer/Control" instance=ExtResource("2_12alm")]
 position = Vector2(514, 111)
 
 [node name="PegGroup" type="CanvasLayer" parent="CanvasLayer"]

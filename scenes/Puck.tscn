@@ -5,19 +5,19 @@
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_y6dw8"]
 friction = 0.7
-bounce = 0.75
+bounce = 0.5
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_taxii"]
-radius = 25.0
+radius = 21.0
 
 [node name="Puck" type="RigidBody2D"]
-mass = 1.2
+mass = 7.95
 physics_material_override = SubResource("PhysicsMaterial_y6dw8")
 script = ExtResource("1_xd7y1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-0.25, -0.25)
-scale = Vector2(0.7, 0.7)
+scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_n78ia")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
