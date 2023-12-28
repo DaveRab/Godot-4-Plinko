@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://e5vgildaa6br" path="res://scenes/Peg.tscn" id="4_tvub4"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ri8te"]
-bounce = 0.25
+bounce = 0.5
 
 [node name="MainGame" type="Node2D"]
 script = ExtResource("3_vmd87")
@@ -14,248 +14,194 @@ script = ExtResource("3_vmd87")
 [node name="GameBoard" parent="." instance=ExtResource("1_j8sv8")]
 
 [node name="Puck" parent="." instance=ExtResource("2_12alm")]
-position = Vector2(648, 111)
+position = Vector2(744, 128)
 mass = 1.5
 physics_material_override = SubResource("PhysicsMaterial_ri8te")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-position = Vector2(0, 42)
+position = Vector2(96, 48)
 polygon = PackedVector2Array(626, 126, 637, 133, 665, 133, 674, 126, 674, 140, 626, 140)
 
 [node name="PegGroup" type="CanvasLayer" parent="."]
 
 [node name="Peg" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(30, 330)
+position = Vector2(704, 256)
 
 [node name="Peg2" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(140, 330)
+position = Vector2(832, 256)
 
 [node name="Peg3" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(250, 330)
+position = Vector2(960, 256)
 
 [node name="Peg4" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(360, 330)
+position = Vector2(1088, 256)
 
 [node name="Peg5" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(470, 330)
-
-[node name="Peg6" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(580, 330)
-
-[node name="Peg7" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(690, 330)
+position = Vector2(1216, 256)
 
 [node name="Peg8" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(85, 400)
+position = Vector2(640, 320)
 
 [node name="Peg9" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(196, 400)
+position = Vector2(768, 320)
 
 [node name="Peg10" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(306, 400)
+position = Vector2(896, 320)
 
 [node name="Peg11" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(415, 400)
+position = Vector2(1024, 320)
 
 [node name="Peg12" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(525, 400)
+position = Vector2(1152, 320)
 
 [node name="Peg13" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(635, 400)
+position = Vector2(1280, 320)
 
 [node name="Peg14" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(30, 470)
+position = Vector2(704, 384)
 
 [node name="Peg15" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(140, 470)
+position = Vector2(832, 384)
 
 [node name="Peg16" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(251, 470)
+position = Vector2(960, 384)
 
 [node name="Peg17" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(360, 470)
+position = Vector2(1088, 384)
 
 [node name="Peg18" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(470, 470)
+position = Vector2(1216, 384)
 
 [node name="Peg19" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(579, 470)
+position = Vector2(640, 448)
 
 [node name="Peg20" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(689, 470)
+position = Vector2(768, 448)
 
 [node name="Peg21" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(85, 540)
+position = Vector2(896, 448)
 
 [node name="Peg22" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(195, 540)
+position = Vector2(1024, 448)
 
 [node name="Peg23" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(305, 540)
+position = Vector2(1152, 448)
 
 [node name="Peg24" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(415, 540)
+position = Vector2(1280, 448)
 
 [node name="Peg25" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(525, 540)
+position = Vector2(704, 512)
 
 [node name="Peg26" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(635, 540)
+position = Vector2(832, 512)
 
 [node name="Peg27" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(30, 610)
+position = Vector2(960, 512)
 
 [node name="Peg28" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(140, 610)
+position = Vector2(1088, 512)
 
 [node name="Peg29" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(250, 610)
+position = Vector2(1216, 512)
 
 [node name="Peg30" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(361, 610)
+position = Vector2(640, 576)
 
 [node name="Peg31" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(470, 610)
+position = Vector2(768, 576)
 
 [node name="Peg32" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(579, 610)
+position = Vector2(896, 576)
 
 [node name="Peg33" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(690, 610)
+position = Vector2(1024, 576)
 
 [node name="Peg34" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(85, 680)
+position = Vector2(1152, 576)
 
 [node name="Peg35" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(195, 680)
+position = Vector2(1280, 576)
 
 [node name="Peg36" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(305, 680)
+position = Vector2(704, 640)
 
 [node name="Peg37" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(416, 680)
+position = Vector2(832, 640)
 
 [node name="Peg38" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(525, 680)
+position = Vector2(960, 640)
 
 [node name="Peg39" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(635, 680)
+position = Vector2(1088, 640)
 
 [node name="Peg40" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(30, 750)
+position = Vector2(1216, 640)
 
 [node name="Peg41" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(140, 750)
+position = Vector2(640, 704)
 
 [node name="Peg42" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(250, 750)
+position = Vector2(768, 704)
 
 [node name="Peg43" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(360, 750)
+position = Vector2(896, 704)
 
 [node name="Peg44" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(470, 750)
+position = Vector2(1024, 704)
 
 [node name="Peg45" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(580, 750)
+position = Vector2(1152, 704)
 
 [node name="Peg46" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(690, 750)
+position = Vector2(1280, 704)
 
 [node name="Peg47" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(85, 820)
+position = Vector2(704, 768)
 
 [node name="Peg48" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(195, 820)
+position = Vector2(832, 768)
 
 [node name="Peg49" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(305, 820)
+position = Vector2(960, 768)
 
 [node name="Peg50" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(415, 820)
+position = Vector2(1088, 768)
 
 [node name="Peg51" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(525, 820)
+position = Vector2(1216, 768)
 
 [node name="Peg52" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(635, 820)
+position = Vector2(640, 832)
 
 [node name="Peg53" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(30, 890)
+position = Vector2(768, 832)
 
 [node name="Peg54" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(140, 890)
+position = Vector2(896, 832)
 
 [node name="Peg55" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(251, 890)
+position = Vector2(1024, 832)
 
 [node name="Peg56" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(360, 890)
+position = Vector2(1152, 832)
 
 [node name="Peg57" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(470, 890)
+position = Vector2(1280, 832)
 
 [node name="Peg58" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(580, 890)
+position = Vector2(704, 896)
 
 [node name="Peg59" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(690, 890)
+position = Vector2(832, 896)
 
 [node name="Peg60" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(85, 960)
+position = Vector2(960, 896)
 
 [node name="Peg61" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(195, 960)
+position = Vector2(1088, 896)
 
 [node name="Peg62" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(305, 960)
-
-[node name="Peg63" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(415, 960)
-
-[node name="Peg64" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(525, 960)
-
-[node name="Peg65" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(635, 960)
-
-[node name="Peg66" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(30, 1030)
-
-[node name="Peg67" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(140, 1030)
-
-[node name="Peg68" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(250, 1030)
-
-[node name="Peg69" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(360, 1030)
-
-[node name="Peg70" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(470, 1030)
-
-[node name="Peg71" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(580, 1030)
-
-[node name="Peg72" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(691, 1030)
-
-[node name="Peg73" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(85, 1100)
-
-[node name="Peg74" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(195, 1100)
-
-[node name="Peg75" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(305, 1100)
-
-[node name="Peg76" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(415, 1100)
-
-[node name="Peg77" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(525, 1100)
-
-[node name="Peg78" parent="PegGroup" instance=ExtResource("4_tvub4")]
-position = Vector2(636, 1100)
+position = Vector2(1216, 896)

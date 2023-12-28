@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://scripts/puck.gd" id="1_xd7y1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_taxii"]
-radius = 21.0
+radius = 36.0555
 
 [node name="Puck" type="RigidBody2D" groups=["pickable"]]
 input_pickable = true
@@ -13,7 +13,6 @@ script = ExtResource("1_xd7y1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-0.25, -0.25)
-scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_n78ia")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

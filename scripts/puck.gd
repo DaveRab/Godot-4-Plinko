@@ -10,6 +10,8 @@ func _on_input_event(viewport, event, shape_idx):
 			print("clicked")
 			clicked.emit(self)
 
+
+#TODO - add clamp to transform to limit direction of puck dragging area.
 func _physics_process(delta):
 	if held:
 		global_transform.origin = get_global_mouse_position()
